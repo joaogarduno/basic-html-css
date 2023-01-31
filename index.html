@@ -88,18 +88,23 @@
       <!-- nos permite crear un boton de radio o un boton de opcion -->
       <label for="exterior">
         <input id="exterior" type="radio" name="exterior-interior">Exterior
-      </label>
+      </label><br>
+      <!-- SALTOS DE LINEA - <break> -->
+      <!-- Break -  romper o separar los elementos y esto representa un salto de linea en ingles un "Line Break" dondo termina una linea y comienza la otra -->
       <label for="interior">
         <input id="interior" type="radio" name="exterior-interior">Interior
-      </label>
+      </label><br>
       <!-- Label significa etiqueta pero existe una sutil diferencia entre "tag" y "label" -->
       <!-- El atributo "for" cuyo valor debe ser igual al ID del elemento input -->
-      <!-- el atributo "name" es el que nos indicara a que grupo de elementos pertenece ese elemento -->
+      <!-- el atributo "name" es el que nos indicará a que grupo de elementos pertenece ese elemento -->
 
       <!-- Obtener valor o una respuesta del usuario -->
       <!-- tipos de input -->
       <!-- placeholder -  le dara una pista al usuario sobre la informacion requerida en ese input -->
-      <input type="text" placeholder="URL de la foto de tu perro" required>
+      <input type="text" placeholder="URL de la foto de tu perro" required><br>
+
+      <!-- La etiqueta de "br" no es necesario que al crearla la pongamos en una linea de código nueva si no que tambien pueden estar al finalizar la linea de codigo anterior -->
+      
       <button type="submit">Enviar</button>
     </form>
 
