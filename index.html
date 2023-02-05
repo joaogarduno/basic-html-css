@@ -84,21 +84,24 @@
     <!-- FORM - FORMULARIOS -->
     <!-- archivo en el servidor con un nombre especifico, "action" representa direccion en el servidor del programa que va a manejar esos datos, el archivo que va a manejar esos datos -->
     <form action="/enviar-respuesta">
-
       <!-- BOTONES DE RADIO -->
       <!-- nos permite crear un boton de radio o un boton de opcion -->
-      <label for="exterior">
-        <input id="exterior" type="radio" name="exterior-interior" checked>Exterior
+      <!-- por ejemplo digamos queremos especificar el valor de interior -->
+      <label for="interior">
+        <input id="interior" type="radio" value="interior" name="exterior-interior" checked>Interior
       </label><br>
+        
       <!-- SALTOS DE LINEA - <break> -->
       <!-- Break -  romper o separar los elementos y esto representa un salto de linea en ingles un "Line Break" dondo termina una linea y comienza la otra -->
-
-      <label for="interior">
-        <input id="interior" type="radio" name="exterior-interior">Interior
+      <label for="exterior">
+        <input id="exterior" type="radio" value="exterior" name="exterior-interior">Exterior
       </label><br>
+      
       <!-- Label significa etiqueta pero existe una sutil diferencia entre "tag" y "label" -->
       <!-- El atributo "for" cuyo valor debe ser igual al ID del elemento input -->
       <!-- el atributo "name" es el que nos indicará a que grupo de elementos pertenece ese elemento -->
+
+      <!-- Un atributo importante cuando estes creando botones de radio o casillas de verificacion es el atributo "value" que en español significa "valor", ese atributo especifica que valor se va a enviar al servidor cuando enviemos la respuesta del usuario, porque si no especificamos el valor el servidor va a recibir un valor generico, esto quiere decir que algun valor de las opciones de ese grupo fue seleccionado, pero como lo va a saber eso el servidor, si esa opcion fue interior ó exterior ó si se selecciono perezoso cariñoso o cualquier combinacion de opciones lo unico que sabe es que hubo cierta opcion que fue seleccionada no su valor como tal y para eso esta ese atributo -->
 
       <!-- CASILLA DE VERIFICACION O CHECKBOX -->
       <!-- Permiten al usuario seleccionar varias opciones si es necesario -->
@@ -106,20 +109,20 @@
       <!-- el ID y el "for" son los que tienen relacion entre si para poder ser ocupados para poder darle clic en el texto para que se marque o se seleccione -->
       <!-- Volvemos hacer uso del atributo "name" para indicarle que pertenecen al mismo grupo y se van agrupar cuando tengan el mismo valor. -->
       <label for="dormilon">
-        <input id="dormilon" type="checkbox" name="personalidad" checked>Dormilon
-      </label>
+        <input id="dormilon" type="checkbox" value="dormilon" name="personalidad" checked>Dormilon
+      </label><br>
 
       <label for="enojon">
-        <input id="enojon" type="checkbox" name="personalidad">Enojon
-      </label>
+        <input id="enojon" type="checkbox" value="enojon" name="personalidad">Enojon
+      </label><br>
 
       <label for="energico">
-        <input id="energico" type="checkbox" name="personalidad">Enérgico
-      </label>
+        <input id="energico" type="checkbox" value="energico" name="personalidad">Enérgico
+      </label><br>
 
       <label for="carinoso">
-        <input id="carinoso" type="checkbox" name="personalidad">Cariñoso
-      </label>
+        <input id="carinoso" type="checkbox" value="carinoso" name="personalidad">Cariñoso
+      </label><br>
 
       <!-- El atributo "checked" -->
       <!-- Para la experiencia del usuario, existe algo muy utíl y es marcar una opcion por defecto, tanto para los bótones de radio como las casillas de verificacion, que cuando el usuario ingrese a la pagina vea una de las opciones ya marcada, y como lo hacemo, se utiliza el atributo "checked" -->
