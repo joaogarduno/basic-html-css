@@ -84,6 +84,7 @@
     <!-- FORM - FORMULARIOS -->
     <!-- archivo en el servidor con un nombre especifico, "action" representa direccion en el servidor del programa que va a manejar esos datos, el archivo que va a manejar esos datos -->
     <form action="/enviar-respuesta">
+
       <!-- BOTONES DE RADIO -->
       <!-- nos permite crear un boton de radio o un boton de opcion -->
       <label for="exterior">
@@ -91,12 +92,36 @@
       </label><br>
       <!-- SALTOS DE LINEA - <break> -->
       <!-- Break -  romper o separar los elementos y esto representa un salto de linea en ingles un "Line Break" dondo termina una linea y comienza la otra -->
+
       <label for="interior">
         <input id="interior" type="radio" name="exterior-interior">Interior
       </label><br>
       <!-- Label significa etiqueta pero existe una sutil diferencia entre "tag" y "label" -->
       <!-- El atributo "for" cuyo valor debe ser igual al ID del elemento input -->
       <!-- el atributo "name" es el que nos indicará a que grupo de elementos pertenece ese elemento -->
+
+      <!-- CASILLA DE VERIFICACION O CHECKBOX -->
+      <!-- Permiten al usuario seleccionar varias opciones si es necesario -->
+      <!-- agregamos la etiqueta "label" para poder uso de estos inputs es decir debemos rodearla -->
+      <!-- el ID y el "for" son los que tienen relacion entre si para poder ser ocupados para poder darle clic en el texto para que se marque o se seleccione -->
+      <!-- Volvemos hacer uso del atributo "name" para indicarle que pertenecen al mismo grupo y se van agrupar cuando tengan el mismo valor. -->
+      <label for="dormilon">
+        <input id="dormilon" type="checkbox" name="personalidad">Dormilon
+      </label>
+
+      <label for="enojon">
+        <input id="enojon" type="checkbox" name="personalidad">Enojon
+      </label>
+
+      <label for="energico">
+        <input id="energico" type="checkbox" name="personalidad">Enérgico
+      </label>
+
+      <label for="carinoso">
+        <input id="carinoso" type="checkbox" name="personalidad">Cariñoso
+      </label>
+
+      <!-- Para la experiencia del usuario, existe algo muy utíl y es marcar una opcion por defecto, tanto para los bótones de radio como las casillas de verificacion, que cuando el usuario ingrese a la pagina vea una de las opciones ya marcada, y como lo hacemo, se utiliza el atributo "checked" -->
 
       <!-- Obtener valor o una respuesta del usuario -->
       <!-- tipos de input -->
