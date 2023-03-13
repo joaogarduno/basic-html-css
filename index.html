@@ -13,9 +13,9 @@
     <h3>Imagenes de Perros:</h3>
     <!-- TODO: Agregar enlace de a imágenes de perros -->
     <!-- enlaces externos -->
-    <p>Haz click aquí para ver más <a href="" target="_blank" rel="noopener noreferrer">imágenes de perros</a></p>
+    <p>Haz click aquí para ver más <a href="#" target="_blank" rel="noopener noreferrer">imágenes de perros</a></p>
 
-    <!-- Enlaces internos -->
+    <!-- ENLACES INTERNOS -->
     <!-- <a href="#parrafo-1">Parrafo 1</a>
     <a href="#parrafo-2">Parrafo 2</a>
     <a href="#parrafo-3">Parrafo 3</a>
@@ -47,37 +47,42 @@
 
     <!-- LISTAS NO ORDENADAS -->
     <h3>Listas de Perros</h3>
-    <p>Cosas que los perros <em>aman</em>:</p>
     
-    <!-- Unordered List -->
-    <ul>
-      <!-- List Item -->
-      <li>Salir</li>
-      <li>Juguetes</li>
-      <li>Comida</li>
-      <li>Estar juntos</li>
-    </ul>
-
-    <!-- Entonces le permite al usuario tener una alternativa en texto  de la imagen que se supone deberia estar ahi, y en el caso de un lector de pantalla, esta seria la descripcion que se daria para la imagen -->
-    <img src="./img/pexels-dominika-roseclay-2023384.jpg" alt="Nice_Dog">
-
-    <!-- LISTAS ORDENADAS -->    
-    <p>Cosas que los gatos <strong>odian</strong>:</p>
-
-    <!-- Ordered List -->
-    <ol>
-      <li>Tratamiento anti-pulgas</li>
-      <li>Truenos</li>
-      <li>Fuegos artificiales</li>
+    <!-- CREACION DEL ELEMENTO <DIV> "div" -->
+    <!-- Todos los elementos que contiene el elemento "div" le pertenecen  -->
+    <!-- Si aplicamos un estilo a este "div", ese estilo con CSS, esa configuración de la presentacion de los elementos va aplicar para todos estos elementos que estan dentro y ese es el principal proposito del porque usamos un div en HTML -->
+    <div>
+      <p>Cosas que los perros <em>aman</em>:</p>
+      <!-- Unordered List -->
       <ul>
-        <li><s>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ut.</s></li>
-        <li> <s>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ut.</s></li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ut.</li>
+        <!-- List Item -->
+        <li>Salir</li>
+        <li>Juguetes</li>
+        <li>Comida</li>
+        <li>Estar juntos</li>
       </ul>
-      <li>Bañarse</li>
 
-      
-    </ol>
+      <!-- Entonces le permite al usuario tener una alternativa en texto  de la imagen que se supone deberia estar ahi, y en el caso de un lector de pantalla, esta seria la descripcion que se daria para la imagen -->
+      <img src="./img/pexels-dominika-roseclay-2023384.jpg" alt="Nice_Dog">
+
+      <!-- LISTAS ORDENADAS -->    
+      <p>Cosas que los perros <strong>odian</strong>:</p>
+
+      <!-- Ordered List -->
+      <ol>
+        <li>Tratamiento anti-pulgas</li>
+        <li>Truenos</li>
+        <li>Fuegos artificiales</li>
+        <ul>
+          <li><s>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ut.</s></li>
+          <li> <s>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ut.</s></li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ut.</li>
+        </ul>
+        <li>Bañarse</li>        
+      </ol>
+
+    </div> <!-- Termina el elemento "div" -->
+
     <img src="https://cdn.pixabay.com/photo/2016/07/15/15/55/dachshund-1519374_960_720.jpg" alt="Dasiyu_Dog">
 
 
@@ -97,7 +102,7 @@
         <input id="exterior" type="radio" value="exterior" name="exterior-interior">Exterior
       </label><br>
       
-      <!-- Label significa etiqueta pero existe una sutil diferencia entre "tag" y "label" -->
+      <!-- LABEL significa etiqueta pero existe una sutil diferencia entre "tag" y "label" -->
       <!-- El atributo "for" cuyo valor debe ser igual al ID del elemento input -->
       <!-- el atributo "name" es el que nos indicará a que grupo de elementos pertenece ese elemento -->
 
@@ -124,7 +129,7 @@
         <input id="carinoso" type="checkbox" value="carinoso" name="personalidad">Cariñoso
       </label><br>
 
-      <!-- El atributo "checked" -->
+      <!-- EL ATRIBUTO "CHECKED" "checked" -->
       <!-- Para la experiencia del usuario, existe algo muy utíl y es marcar una opcion por defecto, tanto para los bótones de radio como las casillas de verificacion, que cuando el usuario ingrese a la pagina vea una de las opciones ya marcada, y como lo hacemo, se utiliza el atributo "checked" -->
 
       <!-- Obtener valor o una respuesta del usuario -->
@@ -137,6 +142,17 @@
       <button type="submit">Enviar</button>
     </form>
 
+    <!-- EL ELEMENTO <DIV> "div" -->
+    <!-- El elemento div es uno de los elementos mas importantes en desarrollo web ya que es muy versatil
+      Es un contenedor que podemos usar para cualquier proposito es un contenedor generico, lo usamos para crear estructuras mas complejas en las paginas web, sirven simplemente para actuar como un contenedor que podemos personalizar cuando empezamos a trabajar con css, ese es uno de su principal uso, vamos a crear un "div" que contenga las listas de perritos ambas listas las cosas que los perros aman y las cosas que los perros odian van a estar como agrupadas dentro del mismo contenedor
+     -->
+
   </main>
+
+  <!-- PIE DE PAGINA O FOOTER -->
+  <!-- El pie de pagina no es parte del contenido principal de nuestra página asi que no  deberia estar dentro del elemento principal del elemento "main", debe de estar luego de "main" -->
+  <footer>
+    <p>Lorem ipsum dolor sit amet consectetur. <a href="google.com">Lorem ipsum dolor sit amet.</a></p>
+  </footer>
 </body>
 </html>
